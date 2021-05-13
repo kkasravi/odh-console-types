@@ -1,0 +1,7 @@
+apiVersion: documentation.console.openshift.io/v1alpha1
+kind: ConsoleDocumentation
+metadata:
+  name: consoledocumentation-sample
+spec:
+  # Add fields here
+  foo: bar

@@ -1,0 +1,24 @@
+domain: openshift.io
+layout:
+- go.kubebuilder.io/v3
+multigroup: true
+projectName: odh-console-types
+repo: kkasravi/odh-console-types
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  domain: openshift.io
+  group: applications.console
+  kind: ConsoleApplication
+  path: kkasravi/odh-console-types/apis/applications.console/v1alpha1
+  version: v1alpha1
+- api:
+    crdVersion: v1
+    namespaced: true
+  domain: openshift.io
+  group: documentation.console
+  kind: ConsoleDocumentation
+  path: kkasravi/odh-console-types/apis/documentation.console/v1alpha1
+  version: v1alpha1
+version: "3"

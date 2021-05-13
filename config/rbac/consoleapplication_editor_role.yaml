@@ -1,0 +1,24 @@
+# permissions for end users to edit consoleapplications.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: consoleapplication-editor-role
+rules:
+- apiGroups:
+  - applications.console.openshift.io
+  resources:
+  - consoleapplications
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - applications.console.openshift.io
+  resources:
+  - consoleapplications/status
+  verbs:
+  - get

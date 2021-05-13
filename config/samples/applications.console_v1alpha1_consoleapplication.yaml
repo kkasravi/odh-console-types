@@ -1,0 +1,7 @@
+apiVersion: applications.console.openshift.io/v1alpha1
+kind: ConsoleApplication
+metadata:
+  name: consoleapplication-sample
+spec:
+  # Add fields here
+  foo: bar

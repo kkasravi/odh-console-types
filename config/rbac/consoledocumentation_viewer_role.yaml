@@ -1,0 +1,20 @@
+# permissions for end users to view consoledocumentations.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: consoledocumentation-viewer-role
+rules:
+- apiGroups:
+  - documentation.console.openshift.io
+  resources:
+  - consoledocumentations
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - documentation.console.openshift.io
+  resources:
+  - consoledocumentations/status
+  verbs:
+  - get

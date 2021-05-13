@@ -1,0 +1,24 @@
+# permissions for end users to edit consoledocumentations.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: consoledocumentation-editor-role
+rules:
+- apiGroups:
+  - documentation.console.openshift.io
+  resources:
+  - consoledocumentations
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - documentation.console.openshift.io
+  resources:
+  - consoledocumentations/status
+  verbs:
+  - get
