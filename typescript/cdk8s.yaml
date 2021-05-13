@@ -2,5 +2,6 @@ app: node index.js
 language: typescript
 imports:
   - k8s@1.17.0
+  - consolequickstarts.console.openshift.io_consolequickstarts.yaml
   - ../config/crd/bases/applications.console.openshift.io_consoleapplications.yaml
   - ../config/crd/bases/documentation.console.openshift.io_consoledocumentations.yaml

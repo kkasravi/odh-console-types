@@ -32,7 +32,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/log/zap"
 
 	applicationsconsolev1alpha1 "kkasravi/odh-console-types/apis/applications.console/v1alpha1"
-	documentationconsolev1alpha1 "kkasravi/odh-console-types/apis/documentation.console/v1alpha1"
+	documentsconsolev1alpha1 "kkasravi/odh-console-types/apis/documents.console/v1alpha1"
 	//+kubebuilder:scaffold:imports
 )
 
@@ -45,7 +45,7 @@ func init() {
 	utilruntime.Must(clientgoscheme.AddToScheme(scheme))
 
 	utilruntime.Must(applicationsconsolev1alpha1.AddToScheme(scheme))
-	utilruntime.Must(documentationconsolev1alpha1.AddToScheme(scheme))
+	utilruntime.Must(documentsconsolev1alpha1.AddToScheme(scheme))
 	//+kubebuilder:scaffold:scheme
 }
 

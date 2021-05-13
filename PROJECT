@@ -17,8 +17,8 @@ resources:
     crdVersion: v1
     namespaced: true
   domain: openshift.io
-  group: documentation.console
-  kind: ConsoleDocumentation
-  path: kkasravi/odh-console-types/apis/documentation.console/v1alpha1
+  group: documents.console
+  kind: ConsoleDocument
+  path: kkasravi/odh-console-types/apis/documents.console/v1alpha1
   version: v1alpha1
 version: "3"

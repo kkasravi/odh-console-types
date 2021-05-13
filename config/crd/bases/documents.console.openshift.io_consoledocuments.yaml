@@ -6,21 +6,20 @@ metadata:
   annotations:
     controller-gen.kubebuilder.io/version: v0.4.1
   creationTimestamp: null
-  name: consoledocumentations.documentation.console.openshift.io
+  name: consoledocuments.documents.console.openshift.io
 spec:
-  group: documentation.console.openshift.io
+  group: documents.console.openshift.io
   names:
-    kind: ConsoleDocumentation
-    listKind: ConsoleDocumentationList
-    plural: consoledocumentations
-    singular: consoledocumentation
+    kind: ConsoleDocument
+    listKind: ConsoleDocumentList
+    plural: consoledocuments
+    singular: consoledocument
   scope: Namespaced
   versions:
   - name: v1alpha1
     schema:
       openAPIV3Schema:
-        description: ConsoleDocumentation is the Schema for the consoledocumentations
-          API
+        description: ConsoleDocument is the Schema for the consoledocuments API
         properties:
           apiVersion:
             description: 'APIVersion defines the versioned schema of this representation
@@ -35,7 +34,7 @@ spec:
           metadata:
             type: object
           spec:
-            description: ConsoleDocumentationSpec defines the desired state of ConsoleDocumentation
+            description: ConsoleDocumentSpec defines the desired state of ConsoleDocument
             properties:
               appName:
                 type: string
@@ -63,8 +62,7 @@ spec:
             - durationMinutes
             type: object
           status:
-            description: ConsoleDocumentationStatus defines the observed state of
-              ConsoleDocumentation
+            description: ConsoleDocumentStatus defines the observed state of ConsoleDocument
             properties:
               enabled:
                 type: boolean
