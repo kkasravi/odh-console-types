@@ -1,0 +1,24 @@
+# permissions for end users to edit rhodsquickstarts.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: rhodsquickstart-editor-role
+rules:
+- apiGroups:
+  - quickstarts.console.openshift.io.openshift.io
+  resources:
+  - rhodsquickstarts
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - quickstarts.console.openshift.io.openshift.io
+  resources:
+  - rhodsquickstarts/status
+  verbs:
+  - get

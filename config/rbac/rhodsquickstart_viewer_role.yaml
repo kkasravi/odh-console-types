@@ -1,0 +1,20 @@
+# permissions for end users to view rhodsquickstarts.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: rhodsquickstart-viewer-role
+rules:
+- apiGroups:
+  - quickstarts.console.openshift.io.openshift.io
+  resources:
+  - rhodsquickstarts
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - quickstarts.console.openshift.io.openshift.io
+  resources:
+  - rhodsquickstarts/status
+  verbs:
+  - get

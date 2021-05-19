@@ -1,0 +1,7 @@
+apiVersion: quickstarts.console.openshift.io.openshift.io/v1
+kind: RhodsQuickStart
+metadata:
+  name: rhodsquickstart-sample
+spec:
+  # Add fields here
+  foo: bar

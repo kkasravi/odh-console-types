@@ -21,4 +21,12 @@ resources:
   kind: ConsoleDocument
   path: kkasravi/odh-console-types/apis/documents.console/v1alpha1
   version: v1alpha1
+- api:
+    crdVersion: v1
+    namespaced: true
+  domain: openshift.io
+  group: quickstarts.console.openshift.io
+  kind: RhodsQuickStart
+  path: kkasravi/odh-console-types/apis/quickstarts.console.openshift.io/v1
+  version: v1
 version: "3"
