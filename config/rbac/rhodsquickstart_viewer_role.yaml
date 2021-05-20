@@ -5,7 +5,7 @@ metadata:
   name: rhodsquickstart-viewer-role
 rules:
 - apiGroups:
-  - quickstarts.console.openshift.io.openshift.io
+  - quickstarts.console.openshift.io
   resources:
   - rhodsquickstarts
   verbs:
@@ -13,7 +13,7 @@ rules:
   - list
   - watch
 - apiGroups:
-  - quickstarts.console.openshift.io.openshift.io
+  - quickstarts.console.openshift.io
   resources:
   - rhodsquickstarts/status
   verbs:

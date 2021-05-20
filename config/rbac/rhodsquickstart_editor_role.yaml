@@ -5,7 +5,7 @@ metadata:
   name: rhodsquickstart-editor-role
 rules:
 - apiGroups:
-  - quickstarts.console.openshift.io.openshift.io
+  - quickstarts.console.openshift.io
   resources:
   - rhodsquickstarts
   verbs:
@@ -17,7 +17,7 @@ rules:
   - update
   - watch
 - apiGroups:
-  - quickstarts.console.openshift.io.openshift.io
+  - quickstarts.console.openshift.io
   resources:
   - rhodsquickstarts/status
   verbs:

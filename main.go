@@ -33,7 +33,7 @@ import (
 
 	applicationsconsolev1alpha1 "kkasravi/odh-console-types/apis/applications.console/v1alpha1"
 	documentsconsolev1alpha1 "kkasravi/odh-console-types/apis/documents.console/v1alpha1"
-	quickstartsconsoleopenshiftiov1 "kkasravi/odh-console-types/apis/quickstarts.console.openshift.io/v1"
+	quickstartsconsoleopenshiftiov1 "kkasravi/odh-console-types/apis/quickstarts.console/v1"
 	//+kubebuilder:scaffold:imports
 )
 

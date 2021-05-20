@@ -4,7 +4,7 @@
 resources:
 - bases/applications.console.openshift.io_consoleapplications.yaml
 - bases/documents.console.openshift.io_consoledocuments.yaml
-- bases/quickstarts.console.openshift.io.openshift.io_rhodsquickstarts.yaml
+- bases/quickstarts.console.openshift.io_rhodsquickstarts.yaml
 #+kubebuilder:scaffold:crdkustomizeresource
 
 patchesStrategicMerge:

@@ -6,9 +6,9 @@ metadata:
   annotations:
     controller-gen.kubebuilder.io/version: v0.4.1
   creationTimestamp: null
-  name: rhodsquickstarts.quickstarts.console.openshift.io.openshift.io
+  name: rhodsquickstarts.quickstarts.console.openshift.io
 spec:
-  group: quickstarts.console.openshift.io.openshift.io
+  group: quickstarts.console.openshift.io
   names:
     kind: RhodsQuickStart
     listKind: RhodsQuickStartList
